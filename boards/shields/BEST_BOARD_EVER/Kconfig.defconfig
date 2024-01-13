@@ -16,4 +16,8 @@ config ZMK_BATTERY_REPORT_INTERVAL
   default 120
 config BT_GATT_ENFORCE_SUBSCRIPTION
   default n
+config BT_MAX_PAIRED
+  default 3
+config BT_MAX_CONN
+  default 3
 endif
