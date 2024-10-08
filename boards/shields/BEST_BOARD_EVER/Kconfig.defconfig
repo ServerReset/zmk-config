@@ -8,8 +8,6 @@ config ZMK_SLEEP
   default y
 config ZMK_IDLE_TIMEOUT
   default 30000
-config ZMK_IDLE_SLEEP_TIMEOUT
-  default 600000
 config ZMK_BATTERY_REPORTING
   default y
 config ZMK_BATTERY_REPORT_INTERVAL
