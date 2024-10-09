@@ -12,6 +12,37 @@
 &soft_off {
     hold-time-ms = <3000>; // Only turn off it the key is held for 3 seconds or longer. Use reset button to power up!
 };
+{
+    macros {
+        BT0: BT0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &bt BT_SEL 0>
+                , <&macro_tap &bt BT_DISC 1>
+                , <&macro_tap &bt BT_DISC 2>
+                ;
+ 		};
+	BT1: BT1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &bt BT_SEL 1>
+                , <&macro_tap &bt BT_DISC 0>
+                , <&macro_tap &bt BT_DISC 2>
+                ;
+ 		};
+	BT2: BT2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &bt BT_SEL 2>
+                , <&macro_tap &bt BT_DISC 0>
+                , <&macro_tap &bt BT_DISC 1>
+                ;
+		};
+	};
+};
 
 / {
 	keymap {
@@ -35,8 +66,8 @@
 		raise {
 			bindings = <
 				&trans    &kp F1       &kp F2       &kp F3       &kp F4       &kp F5       &kp F6   &kp F7       &kp F8      &kp F9    &kp F10   &kp F11  &kp F12      &kp DEL    
-				&trans    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &trans       &trans       &trans   &out OUT_TOG &trans      &trans    &trans    &trans   &trans       &trans     
-				&trans    &bt BT_DISC 0&bt BT_DISC 1&bt BT_DISC 2&trans       &trans       &trans   &trans       &trans      &trans    &trans    &trans   &trans       &trans     
+				&trans    &BT0         &BT1         &BT2         &trans       &trans       &trans   &out OUT_TOG &trans      &trans    &trans    &trans   &trans       &trans     
+				&trans    &trans       &trans       &trans       &trans       &trans       &trans   &trans       &trans      &trans    &trans    &trans   &trans       &trans     
 				&trans    &trans       &trans       &bt BT_CLR   &trans       &trans       &trans   &trans       &trans      &trans    &trans    &trans   &kp C_VOL_UP &kp C_NEXT 
 				&trans    &trans       &trans       &soft_off    &trans       &trans       &kp DEL  &soft_off    &trans      &trans    &trans    &trans   &kp C_VOL_DN &kp C_PP   
 			>;
