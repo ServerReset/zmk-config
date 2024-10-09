@@ -12,7 +12,7 @@
 &soft_off {
     hold-time-ms = <3000>; // Only turn off it the key is held for 3 seconds or longer. Use reset button to power up!
 };
-{
+/{
     macros {
         BT0: BT0 {
             compatible = "zmk,behavior-macro";
