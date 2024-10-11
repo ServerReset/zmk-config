@@ -22,4 +22,8 @@ config BT_MAX_CONN
   default 3
 config ZMK_PM_SOFT_OFF
   default y
+config ZMK_MACRO_DEFAULT_WAIT_MS
+  default 50
+config ZMK_MACRO_DEFAULT_TAP_MS
+  default 100
 endif
