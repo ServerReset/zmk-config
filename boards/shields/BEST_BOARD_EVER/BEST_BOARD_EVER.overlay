@@ -25,7 +25,7 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4)    RC(4,5)      RC(9,0) RC(9,1) RC(9,2) 
         >;
 	};
 
-    1u: keymap_transform_1 {
+    all 1u: keymap_transform_1 {
         compatible = "zmk,matrix-transform";
         columns = <7>;
         rows = <10>;
