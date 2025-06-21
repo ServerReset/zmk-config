@@ -11,8 +11,7 @@
         zmk,kscan = &kscan0;
     };
 
-
-    space_enter: keymap_transform_0 {
+    default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <7>;
         rows = <10>;
