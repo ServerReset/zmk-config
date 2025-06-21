@@ -1,9 +1,9 @@
 #include <physical_layouts.dtsi>
 
 / {
-    1u: 1u {
+    physical_layout0: physical_layout_0 {
         compatible = "zmk,physical-layout";
-        display-name = "All 1u Keys";
+        display-name = "LAYOUT";
 
         kscan = <&kscan0>;
         transform = <&default_transform>;
