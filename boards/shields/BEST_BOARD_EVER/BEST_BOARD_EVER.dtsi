@@ -3,7 +3,7 @@
 / {
     physical_layout0: physical_layout_0 {
         compatible = "zmk,physical-layout";
-        display-name = "LAYOUT";
+        display-name = "Best Board Ever 1u";
 
         kscan = <&kscan0>;
         transform = <&default_transform>;
