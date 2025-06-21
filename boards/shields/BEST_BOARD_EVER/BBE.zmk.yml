@@ -1,9 +1,0 @@
-file_format: "1"
-id: BBE
-name: Best_Board_Ever
-type: shield
-url: Lord Reset?
-requires:
-  - pro_micro
-features:
-  - keys
