@@ -3,13 +3,12 @@
  *
  * SPDX-License-Identifier: MIT
  */
-
+#include "BEST_BOARD_EVER.dtsi
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,matrix_transform = &default_transform;
     };
 
     default_transform: keymap_transform_0 {
