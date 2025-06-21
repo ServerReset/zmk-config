@@ -4,6 +4,7 @@
 if SHIELD_BEST_BOARD_EVER
 config ZMK_KEYBOARD_NAME
 	default "Best Board Ever"
+
 config ZMK_SLEEP
   default y
 config ZMK_IDLE_TIMEOUT
@@ -26,4 +27,5 @@ config ZMK_MACRO_DEFAULT_WAIT_MS
   default 50
 config ZMK_MACRO_DEFAULT_TAP_MS
   default 100
+
 endif
