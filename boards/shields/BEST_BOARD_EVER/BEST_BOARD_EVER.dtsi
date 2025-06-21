@@ -85,7 +85,7 @@
         display-name = "1u";
 
         kscan = <&kscan0>;
-        transform = <&comb_transform>;
+        transform = <&all_1u>;
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0    0       0     0     0>
@@ -166,7 +166,7 @@
         display-name = "Space";
 
         kscan = <&kscan0>;
-        transform = <&comb_transform>;
+        transform = <&space>;
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0    0       0     0     0>
@@ -246,7 +246,7 @@
         display-name = "Enter";
 
         kscan = <&kscan0>;
-        transform = <&comb_transform>;
+        transform = <&enter>;
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0    0       0     0     0>
