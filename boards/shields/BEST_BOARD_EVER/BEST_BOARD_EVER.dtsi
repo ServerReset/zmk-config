@@ -1,12 +1,24 @@
-#include <physical_layouts.dtsi>
 
+
+Import
+
+Edit position map
+
+Export devicetree
+Other tools
+GitHub
+Position map columns
+16
+
+Indent size
+4
+
+
+Export layouts
 / {
-    physical_layout0: physical_layout_0 {
+    layout_0: layout_0 {
         compatible = "zmk,physical-layout";
-        display-name = "LAYOUT";
-
-        kscan = <&kscan0>;
-        transform = <&matrix_transform0>;
+        display-name = "BEST BOARD EVER";
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0    0       0     0     0>
@@ -81,4 +93,14 @@
             , <&key_physical_attrs 100 100 1300  400       0     0     0>
             ;
     };
+
+    position_map {
+        compatible = "zmk,physical-layout-position-map";
+
+        layout_0 {
+            physical-layout = <&layout_0>;
+            positions = <>;
+        };
+    };
 };
+
