@@ -72,5 +72,13 @@
 				&trans    &trans       &trans       &soft_off    &trans       &trans       &kp DEL  &soft_off    &trans      &trans    &trans    &trans   &kp C_VOL_DN &kp C_PP   
 			>;
 		};
+
+		extra1 {
+			status = "reserved";
+		};
+		
+		extra2 {
+			status = "reserved";
+		};
 	};
 };
