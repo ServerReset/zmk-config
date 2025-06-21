@@ -1,0 +1,33 @@
+# Copyright (c) 2024 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+file_format: "1.0"
+shield:
+  id: best_board_ever # Keep this consistent, will be used in Kconfig and elsewhere
+  name: "Best Board Ever"
+  type: shield
+  description: "The Best Board Ever, a ZMK shield."
+  author: "Lord Reset" # Add your name or handle
+  status: "stable" # Or "prototyping", "alpha", "beta", "deprecated"
+  features:
+    - keys
+  # If your shield has specific hardware features beyond basic keys, list them.
+  # e.g.,
+  #  - display
+  #  - encoder
+  #  - rgb_led
+  #  - underglow
+  requires: # List the boards this shield is designed for
+    - nice_nano_v2 # From your build.yaml
+    - nice_nano    # From your build.yaml
+  # If your shield has variants, you can define them here.
+  # variants:
+  #   - id: left
+  #     name: "Best Board Ever - Left"
+  #     description: "Left half of the Best Board Ever"
+  #   - id: right
+  #     name: "Best Board Ever - Right"
+  #     description: "Right half of the Best Board Ever"
+  # documentation: "URL to your shield's documentation if available"
+  # kicad_project: "URL to your KiCad project if available"
+  # 3d_files: "URL to 3D printable files if available"
