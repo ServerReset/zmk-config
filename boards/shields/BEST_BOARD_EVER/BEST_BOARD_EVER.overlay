@@ -4,8 +4,8 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include <zmk/matrix_transform.h> // <-- CHANGED
-#include <zmk/physical-layout.h>  // <-- CHANGED
+#include <dt-bindings/zmk/matrix_transform.h> // Corrected back
+#include <zmk/physical-layout.h>              // Kept as per last step that resolved its path
 
 / {
     chosen {
