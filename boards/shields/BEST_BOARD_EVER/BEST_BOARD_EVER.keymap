@@ -10,9 +10,6 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <zmk-helpers/helper.h>
 
-// This only works with urob's helpers.h
-// Otherwise you will have to expand the macros manually
-
 #define TAP_OR_HOLD(NAME, DESC, TAP, HOLD, DURATION) ZMK_HOLD_TAP(NAME, \
     display-name = DESC; \
     flavor = "tap-preferred"; \
@@ -33,37 +30,6 @@ ZMK_MACRO_ONE_PARAM(m_btdis, display-name = "Bluetooth Profile Disconnect"; bind
 
 &soft_off {
     hold-time-ms = <3000>; // Only turn off it the key is held for 3 seconds or longer. Use reset button to power up!
-};
-/{
-    macros {
-        BT0: BT0 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &bt BT_SEL 0>
-                , <&macro_tap &bt BT_DISC 1>
-                , <&macro_tap &bt BT_DISC 2>
-                ;
- 		};
-	BT1: BT1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &bt BT_SEL 1>
-                , <&macro_tap &bt BT_DISC 0>
-                , <&macro_tap &bt BT_DISC 2>
-                ;
- 		};
-	BT2: BT2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &bt BT_SEL 2>
-                , <&macro_tap &bt BT_DISC 0>
-                , <&macro_tap &bt BT_DISC 1>
-                ;
-		};
-	};
 };
 
 / {
