@@ -1,4 +1,6 @@
-Files For Best Board Ever For ZMK And the Nice Nano
+Files For Best Board Ever For ZMK And the Nice Nano v1 and v2
+
+**FIRMWARE IS under ACTIONS under ARTIFACTS**
 
 Bluetooth profiles are FN Q W E for 1 2 and 3 respectively
 
