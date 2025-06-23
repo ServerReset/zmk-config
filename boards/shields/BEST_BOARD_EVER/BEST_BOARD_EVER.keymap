@@ -24,8 +24,13 @@
                 <&macro_tap &bt BT_DISC 2>,
                 <&macro_tap &bt BT_DISC 3>,
                 <&macro_tap &bt BT_DISC 4>,
-                // Finally, select profile 0 to connect.
-                <&macro_tap &bt BT_SEL 0>;
+                // Then, select profile 0 to connect.
+                <&macro_tap &bt BT_SEL 0>,
+                // Finally, disconnect from the other profiles again to be sure.
+                <&macro_tap &bt BT_DISC 1>,
+                <&macro_tap &bt BT_DISC 2>,
+                <&macro_tap &bt BT_DISC 3>,
+                <&macro_tap &bt BT_DISC 4>;
         };
 
         // Macro: Select Profile 2 (index 1) and disconnect others.
@@ -41,8 +46,13 @@
                 <&macro_tap &bt BT_DISC 2>,
                 <&macro_tap &bt BT_DISC 3>,
                 <&macro_tap &bt BT_DISC 4>,
-                // Finally, select profile 1 to connect.
-                <&macro_tap &bt BT_SEL 1>;
+                // Then, select profile 1 to connect.
+                <&macro_tap &bt BT_SEL 1>,
+                // Finally, disconnect from the other profiles again to be sure.
+                <&macro_tap &bt BT_DISC 0>,
+                <&macro_tap &bt BT_DISC 2>,
+                <&macro_tap &bt BT_DISC 3>,
+                <&macro_tap &bt BT_DISC 4>;
         };
 
         // Macro: Select Profile 3 (index 2) and disconnect others.
@@ -58,8 +68,13 @@
                 <&macro_tap &bt BT_DISC 1>,
                 <&macro_tap &bt BT_DISC 3>,
                 <&macro_tap &bt BT_DISC 4>,
-                // Finally, select profile 2 to connect.
-                <&macro_tap &bt BT_SEL 2>;
+                // Then, select profile 2 to connect.
+                <&macro_tap &bt BT_SEL 2>,
+                // Finally, disconnect from the other profiles again to be sure.
+                <&macro_tap &bt BT_DISC 0>,
+                <&macro_tap &bt BT_DISC 1>,
+                <&macro_tap &bt BT_DISC 3>,
+                <&macro_tap &bt BT_DISC 4>;
         };
 
         // Macro: Select Profile 4 (index 3) and disconnect others.
@@ -75,8 +90,13 @@
                 <&macro_tap &bt BT_DISC 1>,
                 <&macro_tap &bt BT_DISC 2>,
                 <&macro_tap &bt BT_DISC 4>,
-                // Finally, select profile 3 to connect.
-                <&macro_tap &bt BT_SEL 3>;
+                // Then, select profile 3 to connect.
+                <&macro_tap &bt BT_SEL 3>,
+                // Finally, disconnect from the other profiles again to be sure.
+                <&macro_tap &bt BT_DISC 0>,
+                <&macro_tap &bt BT_DISC 1>,
+                <&macro_tap &bt BT_DISC 2>,
+                <&macro_tap &bt BT_DISC 4>;
         };
 
         // Macro: Select Profile 5 (index 4) and disconnect others.
@@ -92,8 +112,13 @@
                 <&macro_tap &bt BT_DISC 1>,
                 <&macro_tap &bt BT_DISC 2>,
                 <&macro_tap &bt BT_DISC 3>,
-                // Finally, select profile 4 to connect.
-                <&macro_tap &bt BT_SEL 4>;
+                // Then, select profile 4 to connect.
+                <&macro_tap &bt BT_SEL 4>,
+                // Finally, disconnect from the other profiles again to be sure.
+                <&macro_tap &bt BT_DISC 0>,
+                <&macro_tap &bt BT_DISC 1>,
+                <&macro_tap &bt BT_DISC 2>,
+                <&macro_tap &bt BT_DISC 3>;
         };
     };
 };
