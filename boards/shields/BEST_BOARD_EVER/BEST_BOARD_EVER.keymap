@@ -26,12 +26,12 @@ TAP_OR_SHORT_HOLD(bt_sel_disc, "Bluetooth Profile Tap: Select; Hold: Disconnect"
 ZMK_MACRO_ONE_PARAM(m_btsel, display-name = "Bluetooth Profile Select"; bindings = <&macro_param_1to2>, <&bt BT_SEL MACRO_PLACEHOLDER>;)
 ZMK_MACRO_ONE_PARAM(m_btdis, display-name = "Bluetooth Profile Disconnect"; bindings = <&macro_param_1to2>, <&bt BT_DISC MACRO_PLACEHOLDER>;)
 
-#define BTSD(P) &bt_sel_disc P P
-
 ZMK_MACRO(BT0, display-name = "Bluetooth Profile Select 0 and Disconnect all others"; bindings = <&bt BT_SEL 0>, <&bt BT_DISC 1>, <&bt BT_DISC 2>, <&bt BT_DISC 3>;)Add commentMore actions
 ZMK_MACRO(BT1, display-name = "Bluetooth Profile Select 1 and Disconnect all others"; bindings = <&bt BT_SEL 1>, <&bt BT_DISC 0>, <&bt BT_DISC 2>, <&bt BT_DISC 3>;)
 ZMK_MACRO(BT2, display-name = "Bluetooth Profile Select 2 and Disconnect all others"; bindings = <&bt BT_SEL 2>, <&bt BT_DISC 0>, <&bt BT_DISC 1>, <&bt BT_DISC 3>;)
 ZMK_MACRO(BT3, display-name = "Bluetooth Profile Select 3 and Disconnect all others"; bindings = <&bt BT_SEL 3>, <&bt BT_DISC 0>, <&bt BT_DISC 1>, <&bt BT_DISC 2>;)
+
+#define BTSD(P) &bt_sel_disc P P
 
 &soft_off {
     hold-time-ms = <3000>; // Only turn off it the key is held for 3 seconds or longer. Use reset button to power up!
