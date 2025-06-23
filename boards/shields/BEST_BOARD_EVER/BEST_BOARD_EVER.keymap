@@ -52,6 +52,7 @@
             bindings = <&bt BT_CLR>, <&bt BT_SEL 4>;
         };
     };
+};
 
 &soft_off {
     hold-time-ms = <3000>; // Only turn off it the key is held for 3 seconds or longer. Use reset button to power up!
