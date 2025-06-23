@@ -11,104 +11,47 @@
 
 / {
     behaviors {
-        // --- Profile 1 (Index 0) ---
-        // Define the individual hold/tap actions as macros
-        h_pro1: pro1_hold_action {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap &bt BT_DISC 0>;
-        };
-        t_pro1: pro1_tap_action {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap &bt BT_SEL 0>;
-        };
-        // Define the main hold-tap behavior referencing the actions
-        Pro1: Pro1 {
+        // Define hold-tap behaviors for profiles 0-4.
+        Pro0: bt_control_profile_0 {
             compatible = "zmk,behavior-hold-tap";
-            label = "PRO1_HT";
+            label = "PRO0";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&h_pro1 &t_pro1>;
+            tapping-term-ms = <280>;
+            bindings = <&bt BT_CLR>, <&bt BT_SEL 0>;
         };
 
-        // --- Profile 2 (Index 1) ---
-        h_pro2: pro2_hold_action {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap &bt BT_DISC 1>;
-        };
-        t_pro2: pro2_tap_action {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap &bt BT_SEL 1>;
-        };
-        Pro2: Pro2 {
+        Pro1: bt_control_profile_1 {
             compatible = "zmk,behavior-hold-tap";
-            label = "PRO2_HT";
+            label = "PRO1";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&h_pro2 &t_pro2>;
+            tapping-term-ms = <280>;
+            bindings = <&bt BT_CLR>, <&bt BT_SEL 1>;
         };
 
-        // --- Profile 3 (Index 2) ---
-        h_pro3: pro3_hold_action {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap &bt BT_DISC 2>;
-        };
-        t_pro3: pro3_tap_action {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap &bt BT_SEL 2>;
-        };
-        Pro3: Pro3 {
+        Pro2: bt_control_profile_2 {
             compatible = "zmk,behavior-hold-tap";
-            label = "PRO3_HT";
+            label = "PRO2";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&h_pro3 &t_pro3>;
+            tapping-term-ms = <280>;
+            bindings = <&bt BT_CLR>, <&bt BT_SEL 2>;
         };
 
-        // --- Profile 4 (Index 3) ---
-        h_pro4: pro4_hold_action {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap &bt BT_DISC 3>;
-        };
-        t_pro4: pro4_tap_action {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap &bt BT_SEL 3>;
-        };
-        Pro4: Pro4 {
+        Pro3: bt_control_profile_3 {
             compatible = "zmk,behavior-hold-tap";
-            label = "PRO4_HT";
+            label = "PRO3";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&h_pro4 &t_pro4>;
+            tapping-term-ms = <280>;
+            bindings = <&bt BT_CLR>, <&bt BT_SEL 3>;
         };
 
-        // --- Profile 5 (Index 4) ---
-        h_pro5: pro5_hold_action {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap &bt BT_DISC 4>;
-        };
-        t_pro5: pro5_tap_action {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap &bt BT_SEL 4>;
-        };
-        Pro5: Pro5 {
+        Pro4: bt_control_profile_4 {
             compatible = "zmk,behavior-hold-tap";
-            label = "PRO5_HT";
+            label = "PRO4";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&h_pro5 &t_pro5>;
+            tapping-term-ms = <280>;
+            bindings = <&bt BT_CLR>, <&bt BT_SEL 4>;
         };
     };
-};
 
 &soft_off {
     hold-time-ms = <3000>; // Only turn off it the key is held for 3 seconds or longer. Use reset button to power up!
