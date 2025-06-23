@@ -18,9 +18,9 @@ config ZMK_BATTERY_REPORT_INTERVAL
 config BT_GATT_ENFORCE_SUBSCRIPTION
   default n
 config BT_MAX_PAIRED
-  default 3
+  default 5
 config BT_MAX_CONN
-  default 3
+  default 1
 config ZMK_PM_SOFT_OFF
   default y
 config ZMK_MACRO_DEFAULT_WAIT_MS
