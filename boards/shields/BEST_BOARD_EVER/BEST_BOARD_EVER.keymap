@@ -10,7 +10,6 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-/ {
     behaviors {
         // --- Profile 1 (Index 0) ---
         // Define the individual hold/tap actions as macros
