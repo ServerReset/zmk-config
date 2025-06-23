@@ -23,9 +23,6 @@
 
 TAP_OR_SHORT_HOLD(bt_sel_disc, "Bluetooth Profile Tap: Select; Hold: Disconnect", m_btsel, m_btdis)
 
-ZMK_MACRO_ONE_PARAM(m_btsel, display-name = "Bluetooth Profile Select"; bindings = <&macro_param_1to2>, <&bt BT_SEL MACRO_PLACEHOLDER>;)
-ZMK_MACRO_ONE_PARAM(m_btdis, display-name = "Bluetooth Profile Disconnect"; bindings = <&macro_param_1to2>, <&bt BT_DISC MACRO_PLACEHOLDER>;)
-
 ZMK_MACRO(BT0, display-name = "Bluetooth Profile Select 0 and Disconnect all others"; bindings = <&bt BT_SEL 0>, <&bt BT_DISC 1>, <&bt BT_DISC 2>, <&bt BT_DISC 3>;)Add commentMore actions
 ZMK_MACRO(BT1, display-name = "Bluetooth Profile Select 1 and Disconnect all others"; bindings = <&bt BT_SEL 1>, <&bt BT_DISC 0>, <&bt BT_DISC 2>, <&bt BT_DISC 3>;)
 ZMK_MACRO(BT2, display-name = "Bluetooth Profile Select 2 and Disconnect all others"; bindings = <&bt BT_SEL 2>, <&bt BT_DISC 0>, <&bt BT_DISC 1>, <&bt BT_DISC 3>;)
