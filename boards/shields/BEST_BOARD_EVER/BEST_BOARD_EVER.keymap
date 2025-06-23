@@ -10,50 +10,103 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
+/ {
     behaviors {
-        // Profile 1 (Index 0): Hold to disconnect, Tap to connect.
+        // --- Profile 1 (Index 0) ---
+        // Define the individual hold/tap actions as macros
+        h_pro1: pro1_hold_action {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &bt BT_DISC 0>;
+        };
+        t_pro1: pro1_tap_action {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &bt BT_SEL 0>;
+        };
+        // Define the main hold-tap behavior referencing the actions
         Pro1: Pro1 {
             compatible = "zmk,behavior-hold-tap";
             label = "PRO1_HT";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&bt BT_DISC 0 &bt BT_SEL 0>;
+            bindings = <&h_pro1 &t_pro1>;
         };
 
-        // Profile 2 (Index 1): Hold to disconnect, Tap to connect.
+        // --- Profile 2 (Index 1) ---
+        h_pro2: pro2_hold_action {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &bt BT_DISC 1>;
+        };
+        t_pro2: pro2_tap_action {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &bt BT_SEL 1>;
+        };
         Pro2: Pro2 {
             compatible = "zmk,behavior-hold-tap";
             label = "PRO2_HT";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&bt BT_DISC 1 &bt BT_SEL 1>;
+            bindings = <&h_pro2 &t_pro2>;
         };
 
-        // Profile 3 (Index 2): Hold to disconnect, Tap to connect.
+        // --- Profile 3 (Index 2) ---
+        h_pro3: pro3_hold_action {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &bt BT_DISC 2>;
+        };
+        t_pro3: pro3_tap_action {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &bt BT_SEL 2>;
+        };
         Pro3: Pro3 {
             compatible = "zmk,behavior-hold-tap";
             label = "PRO3_HT";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&bt BT_DISC 2 &bt BT_SEL 2>;
+            bindings = <&h_pro3 &t_pro3>;
         };
 
-        // Profile 4 (Index 3): Hold to disconnect, Tap to connect.
+        // --- Profile 4 (Index 3) ---
+        h_pro4: pro4_hold_action {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &bt BT_DISC 3>;
+        };
+        t_pro4: pro4_tap_action {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &bt BT_SEL 3>;
+        };
         Pro4: Pro4 {
             compatible = "zmk,behavior-hold-tap";
             label = "PRO4_HT";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&bt BT_DISC 3 &bt BT_SEL 3>;
+            bindings = <&h_pro4 &t_pro4>;
         };
 
-        // Profile 5 (Index 4): Hold to disconnect, Tap to connect.
+        // --- Profile 5 (Index 4) ---
+        h_pro5: pro5_hold_action {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &bt BT_DISC 4>;
+        };
+        t_pro5: pro5_tap_action {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &bt BT_SEL 4>;
+        };
         Pro5: Pro5 {
             compatible = "zmk,behavior-hold-tap";
             label = "PRO5_HT";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&bt BT_DISC 4 &bt BT_SEL 4>;
+            bindings = <&h_pro5 &t_pro5>;
         };
     };
 };
