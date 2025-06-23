@@ -53,45 +53,44 @@
         };
     };
 
-/ {
-	keymap {
-		compatible = "zmk,keymap";
+    keymap {
+        compatible = "zmk,keymap";
 
-		default_layer {
-				// | ESC | 1    |   2   |  3    |  4   |  5    |  6   |  7   |  8   |  9   |  10  |   -   |  =    | BSC  |
-				// | GRV | Q    |   W   |  E    |  R   |  T    |  Y   |  U   |  I   |  O   |  P   |   [   |  ]    | \    |
-				// | TAB | A    |   S   |  D    |  F   |  G    |  H   |  J   |  K   |  L   |  ;   |   '   |     ENTER    |
-				// |LSFT | Z    |   X   |  C    |  V   |  B    |  N   |  M   |  ,   |  .   |  /   | RSHIFT|  UP   | CAPS |
-				// |LCTL | LGUI |  LALT | MO(1) |        SPACE        | MO(1)| RALT | RGUI | RCTL | LEFT  | DOWN  | RIGHT|
-			bindings = <
-				&kp ESC   &kp N1   &kp N2   &kp N3   &kp N4    &kp N5    &kp N6    &kp N7   &kp N8    &kp N9   &kp N0    &kp MINUS &kp EQUAL &kp BSPC  
-				&kp GRAVE &kp Q    &kp W    &kp E    &kp R     &kp T     &kp Y     &kp U    &kp I     &kp O    &kp P     &kp LBKT  &kp RBKT  &kp BSLH  
-				&kp TAB   &kp A    &kp S    &kp D    &kp F     &kp G     &kp H     &kp J    &kp K     &kp L    &kp SEMI  &kp SQT   &kp RET   &kp RET   
-				&kp LSHFT &kp Z    &kp X    &kp C    &kp V     &kp B     &kp N     &kp M    &kp COMMA &kp DOT  &kp FSLH  &kp RSHFT &kp UP    &kp CAPS  
-				&kp LCTRL &kp LGUI &kp LALT &mo 1    &kp SPACE &kp SPACE &kp BSPC  &mo 1    &kp RALT  &kp RGUI &kp RCTRL &kp LEFT  &kp DOWN  &kp RIGHT 
-			>;
-		};
+        default_layer {
+            // | ESC | 1    |   2   |  3    |  4    |  5    |  6    |  7    |  8    |  9    |  10   |   -   |  =    | BSC  |
+            // | GRV | Q    |   W   |  E    |  R    |  T    |  Y    |  U    |  I    |  O    |  P    |   [   |  ]    | \    |
+            // | TAB | A    |   S   |  D    |  F    |  G    |  H    |  J    |  K    |  L    |  ;    |   '   |      ENTER     |
+            // |LSFT | Z    |   X   |  C    |  V    |  B    |  N    |  M    |  ,    |  .    |  /    | RSHIFT|  UP   | CAPS |
+            // |LCTL | LGUI |  LALT | MO(1) |       SPACE       | MO(1)| RALT | RGUI | RCTL | LEFT  | DOWN  | RIGHT|
+            bindings = <
+                &kp ESC   &kp N1    &kp N2    &kp N3    &kp N4     &kp N5     &kp N6     &kp N7    &kp N8     &kp N9    &kp N0     &kp MINUS &kp EQUAL &kp BSPC
+                &kp GRAVE &kp Q     &kp W     &kp E     &kp R      &kp T      &kp Y      &kp U     &kp I      &kp O     &kp P      &kp LBKT  &kp RBKT  &kp BSLH
+                &kp TAB   &kp A     &kp S     &kp D     &kp F      &kp G      &kp H      &kp J     &kp K      &kp L     &kp SEMI   &kp SQT   &kp RET   &kp RET
+                &kp LSHFT &kp Z     &kp X     &kp C     &kp V      &kp B      &kp N      &kp M     &kp COMMA  &kp DOT   &kp FSLH   &kp RSHFT &kp UP    &kp CAPS
+                &kp LCTRL &kp LGUI  &kp LALT  &mo 1     &kp SPACE  &kp SPACE  &kp BSPC   &mo 1     &kp RALT   &kp RGUI  &kp RCTRL  &kp LEFT  &kp DOWN  &kp RIGHT
+            >;
+        };
 
-		raise {
-			bindings = <
-				&trans    &kp F1       &kp F2       &kp F3       &kp F4       &kp F5       &kp F6   &kp F7       &kp F8      &kp F9    &kp F10   &kp F11  &kp F12      &kp DEL    
-				&trans    &Pro0        &Pro1        &Pro2        &Pro3        &Pro4        &trans &studio_unlock &trans   &out OUT_TOG &trans    &trans   &trans       &trans     
-				&trans  &bt BT_CLR_ALL &trans       &trans       &trans       &trans       &trans   &trans       &trans      &trans    &trans    &trans   &trans       &trans     
-				&trans    &trans       &trans       &bt BT_CLR   &trans       &trans       &trans   &trans       &trans      &trans    &trans    &trans   &kp C_VOL_UP &kp C_NEXT 
-				&trans    &trans       &trans       &soft_off    &trans       &trans       &kp DEL  &soft_off    &trans      &trans    &trans    &trans   &kp C_VOL_DN &kp C_PP   
-			>;
-		};
+        raise {
+            bindings = <
+                &trans    &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6    &kp F7         &kp F8      &kp F9    &kp F10   &kp F11     &kp F12       &kp DEL
+                &trans    &Pro0         &Pro1         &Pro2         &Pro3         &Pro4         &trans    &trans         &trans      &out OUT_TOG &trans   &trans      &trans        &trans
+                &trans    &bt BT_CLR_ALL &trans       &trans        &trans        &trans        &trans    &trans         &trans      &trans    &trans    &trans      &trans        &trans
+                &trans    &trans        &trans        &bt BT_CLR    &trans        &trans        &trans    &trans         &trans      &trans    &trans    &trans      &kp C_VOL_UP  &kp C_NEXT
+                &trans    &trans        &trans        &soft_off     &trans        &trans        &kp DEL   &soft_off      &trans      &trans    &trans    &trans      &kp C_VOL_DN  &kp C_PP
+            >;
+        };
 
-		extra1 {
-			status = "reserved";
-		};
-		
-		extra2 {
-			status = "reserved";
-		};
-	};
+        extra1 {
+            status = "reserved";
+        };
+
+        extra2 {
+            status = "reserved";
+        };
+    };
 };
 
 &soft_off {
-    hold-time-ms = <3000>; // Only turn off it the key is held for 3 seconds or longer. Use reset button to power up!
+    hold-time-ms = <3000>; // Only turn off if the key is held for 3 seconds or longer. Use reset button to power up!
 };
