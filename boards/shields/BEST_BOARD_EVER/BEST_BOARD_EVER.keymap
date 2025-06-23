@@ -19,13 +19,13 @@
             wait-ms = <10>; // Delay between each step in the macro.
             tap-ms = <20>;  // Duration of each key tap in the macro.
             bindings =
-                // First, disconnect from all other profiles directly.
+                // First, select profile 0 to connect.
+                <&macro_tap &bt BT_SEL 0>,
+                // Then, disconnect from all other profiles directly.
                 <&macro_tap &bt BT_DISC 1>,
                 <&macro_tap &bt BT_DISC 2>,
                 <&macro_tap &bt BT_DISC 3>,
-                <&macro_tap &bt BT_DISC 4>,
-                // Finally, select profile 0 to connect.
-                <&macro_tap &bt BT_SEL 0>;
+                <&macro_tap &bt BT_DISC 4>;
         };
 
         // Macro: Select Profile 2 (index 1) and disconnect others.
@@ -36,13 +36,13 @@
             wait-ms = <10>;
             tap-ms = <20>;
             bindings =
-                // Disconnect from all other profiles directly.
+                // First, select profile 1 to connect.
+                <&macro_tap &bt BT_SEL 1>,
+                // Then, disconnect from all other profiles directly.
                 <&macro_tap &bt BT_DISC 0>,
                 <&macro_tap &bt BT_DISC 2>,
                 <&macro_tap &bt BT_DISC 3>,
-                <&macro_tap &bt BT_DISC 4>,
-                // Finally, select profile 1 to connect.
-                <&macro_tap &bt BT_SEL 1>;
+                <&macro_tap &bt BT_DISC 4>;
         };
 
         // Macro: Select Profile 3 (index 2) and disconnect others.
@@ -53,13 +53,13 @@
             wait-ms = <10>;
             tap-ms = <20>;
             bindings =
-                // Disconnect from all other profiles directly.
+                // First, select profile 2 to connect.
+                <&macro_tap &bt BT_SEL 2>,
+                // Then, disconnect from all other profiles directly.
                 <&macro_tap &bt BT_DISC 0>,
                 <&macro_tap &bt BT_DISC 1>,
                 <&macro_tap &bt BT_DISC 3>,
-                <&macro_tap &bt BT_DISC 4>,
-                // Finally, select profile 2 to connect.
-                <&macro_tap &bt BT_SEL 2>;
+                <&macro_tap &bt BT_DISC 4>;
         };
 
         // Macro: Select Profile 4 (index 3) and disconnect others.
@@ -70,13 +70,13 @@
             wait-ms = <10>;
             tap-ms = <20>;
             bindings =
-                // Disconnect from all other profiles directly.
+                // First, select profile 3 to connect.
+                <&macro_tap &bt BT_SEL 3>,
+                // Then, disconnect from all other profiles directly.
                 <&macro_tap &bt BT_DISC 0>,
                 <&macro_tap &bt BT_DISC 1>,
                 <&macro_tap &bt BT_DISC 2>,
-                <&macro_tap &bt BT_DISC 4>,
-                // Finally, select profile 3 to connect.
-                <&macro_tap &bt BT_SEL 3>;
+                <&macro_tap &bt BT_DISC 4>;
         };
 
         // Macro: Select Profile 5 (index 4) and disconnect others.
@@ -87,13 +87,13 @@
             wait-ms = <10>;
             tap-ms = <20>;
             bindings =
-                // Disconnect from all other profiles directly.
+                // First, select profile 4 to connect.
+                <&macro_tap &bt BT_SEL 4>,
+                // Then, disconnect from all other profiles directly.
                 <&macro_tap &bt BT_DISC 0>,
                 <&macro_tap &bt BT_DISC 1>,
                 <&macro_tap &bt BT_DISC 2>,
-                <&macro_tap &bt BT_DISC 3>,
-                // Finally, select profile 4 to connect.
-                <&macro_tap &bt BT_SEL 4>;
+                <&macro_tap &bt BT_DISC 3>;
         };
     };
 };
