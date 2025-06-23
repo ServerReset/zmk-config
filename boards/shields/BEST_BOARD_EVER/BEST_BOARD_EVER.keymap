@@ -16,8 +16,8 @@
             compatible = "zmk,behavior-macro";
             label = "PRO_1";
             #binding-cells = <0>;
-            wait-ms = <10>; // Delay between each step in the macro.
-            tap-ms = <20>;  // Duration of each key tap in the macro.
+            wait-ms = <35>; // Delay between each step in the macro.
+            tap-ms = <35>;  // Duration of each key tap in the macro.
             bindings =
                 // First, select profile 0 to connect.
                 <&macro_tap &bt BT_SEL 0>,
@@ -33,8 +33,8 @@
             compatible = "zmk,behavior-macro";
             label = "PRO_2";
             #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <20>;
+            wait-ms = <35>;
+            tap-ms = <35>;
             bindings =
                 // First, select profile 1 to connect.
                 <&macro_tap &bt BT_SEL 1>,
@@ -50,8 +50,8 @@
             compatible = "zmk,behavior-macro";
             label = "PRO_3";
             #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <20>;
+            wait-ms = <35>;
+            tap-ms = <35>;
             bindings =
                 // First, select profile 2 to connect.
                 <&macro_tap &bt BT_SEL 2>,
@@ -67,8 +67,8 @@
             compatible = "zmk,behavior-macro";
             label = "PRO_4";
             #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <20>;
+            wait-ms = <35>;
+            tap-ms = <35>;
             bindings =
                 // First, select profile 3 to connect.
                 <&macro_tap &bt BT_SEL 3>,
@@ -84,8 +84,8 @@
             compatible = "zmk,behavior-macro";
             label = "PRO_5";
             #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <20>;
+            wait-ms = <35>;
+            tap-ms = <35>;
             bindings =
                 // First, select profile 4 to connect.
                 <&macro_tap &bt BT_SEL 4>,
