@@ -53,10 +53,6 @@
         };
     };
 
-&soft_off {
-    hold-time-ms = <3000>; // Only turn off it the key is held for 3 seconds or longer. Use reset button to power up!
-};
-
 / {
 	keymap {
 		compatible = "zmk,keymap";
@@ -94,4 +90,8 @@
 			status = "reserved";
 		};
 	};
+};
+
+&soft_off {
+    hold-time-ms = <3000>; // Only turn off it the key is held for 3 seconds or longer. Use reset button to power up!
 };
