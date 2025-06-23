@@ -10,115 +10,50 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-    macros {
-        // Macro: Select Profile 1 (index 0) and disconnect others.
+    behaviors {
+        // Profile 1 (Index 0): Hold to disconnect, Tap to connect.
         Pro1: Pro1 {
-            compatible = "zmk,behavior-macro";
-            label = "PRO_1";
+            compatible = "zmk,behavior-hold-tap";
+            label = "PRO1_HT";
             #binding-cells = <0>;
-            wait-ms = <20>; // Delay between each step in the macro.
-            tap-ms = <20>;  // Duration of each key tap in the macro.
-            bindings =
-                // First, disconnect from all other profiles directly.
-                <&macro_tap &bt BT_DISC 1>,
-                <&macro_tap &bt BT_DISC 2>,
-                <&macro_tap &bt BT_DISC 3>,
-                <&macro_tap &bt BT_DISC 4>,
-                // Then, select profile 0 to connect.
-                <&macro_tap &bt BT_SEL 0>,
-                // Finally, disconnect from the other profiles again to be sure.
-                <&macro_tap &bt BT_DISC 1>,
-                <&macro_tap &bt BT_DISC 2>,
-                <&macro_tap &bt BT_DISC 3>,
-                <&macro_tap &bt BT_DISC 4>;
+            tapping-term-ms = <200>;
+            bindings = <&bt BT_DISC 0>, <&bt BT_SEL 0>;
         };
 
-        // Macro: Select Profile 2 (index 1) and disconnect others.
+        // Profile 2 (Index 1): Hold to disconnect, Tap to connect.
         Pro2: Pro2 {
-            compatible = "zmk,behavior-macro";
-            label = "PRO_2";
+            compatible = "zmk,behavior-hold-tap";
+            label = "PRO2_HT";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
-            bindings =
-                // First, disconnect from all other profiles directly.
-                <&macro_tap &bt BT_DISC 0>,
-                <&macro_tap &bt BT_DISC 2>,
-                <&macro_tap &bt BT_DISC 3>,
-                <&macro_tap &bt BT_DISC 4>,
-                // Then, select profile 1 to connect.
-                <&macro_tap &bt BT_SEL 1>,
-                // Finally, disconnect from the other profiles again to be sure.
-                <&macro_tap &bt BT_DISC 0>,
-                <&macro_tap &bt BT_DISC 2>,
-                <&macro_tap &bt BT_DISC 3>,
-                <&macro_tap &bt BT_DISC 4>;
+            tapping-term-ms = <200>;
+            bindings = <&bt BT_DISC 1>, <&bt BT_SEL 1>;
         };
 
-        // Macro: Select Profile 3 (index 2) and disconnect others.
+        // Profile 3 (Index 2): Hold to disconnect, Tap to connect.
         Pro3: Pro3 {
-            compatible = "zmk,behavior-macro";
-            label = "PRO_3";
+            compatible = "zmk,behavior-hold-tap";
+            label = "PRO3_HT";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
-            bindings =
-                // First, disconnect from all other profiles directly.
-                <&macro_tap &bt BT_DISC 0>,
-                <&macro_tap &bt BT_DISC 1>,
-                <&macro_tap &bt BT_DISC 3>,
-                <&macro_tap &bt BT_DISC 4>,
-                // Then, select profile 2 to connect.
-                <&macro_tap &bt BT_SEL 2>,
-                // Finally, disconnect from the other profiles again to be sure.
-                <&macro_tap &bt BT_DISC 0>,
-                <&macro_tap &bt BT_DISC 1>,
-                <&macro_tap &bt BT_DISC 3>,
-                <&macro_tap &bt BT_DISC 4>;
+            tapping-term-ms = <200>;
+            bindings = <&bt BT_DISC 2>, <&bt BT_SEL 2>;
         };
 
-        // Macro: Select Profile 4 (index 3) and disconnect others.
+        // Profile 4 (Index 3): Hold to disconnect, Tap to connect.
         Pro4: Pro4 {
-            compatible = "zmk,behavior-macro";
-            label = "PRO_4";
+            compatible = "zmk,behavior-hold-tap";
+            label = "PRO4_HT";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
-            bindings =
-                // First, disconnect from all other profiles directly.
-                <&macro_tap &bt BT_DISC 0>,
-                <&macro_tap &bt BT_DISC 1>,
-                <&macro_tap &bt BT_DISC 2>,
-                <&macro_tap &bt BT_DISC 4>,
-                // Then, select profile 3 to connect.
-                <&macro_tap &bt BT_SEL 3>,
-                // Finally, disconnect from the other profiles again to be sure.
-                <&macro_tap &bt BT_DISC 0>,
-                <&macro_tap &bt BT_DISC 1>,
-                <&macro_tap &bt BT_DISC 2>,
-                <&macro_tap &bt BT_DISC 4>;
+            tapping-term-ms = <200>;
+            bindings = <&bt BT_DISC 3>, <&bt BT_SEL 3>;
         };
 
-        // Macro: Select Profile 5 (index 4) and disconnect others.
+        // Profile 5 (Index 4): Hold to disconnect, Tap to connect.
         Pro5: Pro5 {
-            compatible = "zmk,behavior-macro";
-            label = "PRO_5";
+            compatible = "zmk,behavior-hold-tap";
+            label = "PRO5_HT";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
-            bindings =
-                // First, disconnect from all other profiles directly.
-                <&macro_tap &bt BT_DISC 0>,
-                <&macro_tap &bt BT_DISC 1>,
-                <&macro_tap &bt BT_DISC 2>,
-                <&macro_tap &bt BT_DISC 3>,
-                // Then, select profile 4 to connect.
-                <&macro_tap &bt BT_SEL 4>,
-                // Finally, disconnect from the other profiles again to be sure.
-                <&macro_tap &bt BT_DISC 0>,
-                <&macro_tap &bt BT_DISC 1>,
-                <&macro_tap &bt BT_DISC 2>,
-                <&macro_tap &bt BT_DISC 3>;
+            tapping-term-ms = <200>;
+            bindings = <&bt BT_DISC 4>, <&bt BT_SEL 4>;
         };
     };
 };
