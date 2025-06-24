@@ -12,7 +12,7 @@
 
 ZMK_MACRO(BT0,
     display-name = "BTs0";
-    bindings = <&macro_wait_time 500>, <&bt BT_SEL 0>,
+    bindings = <&macro_wait_time 1000>, <&bt BT_SEL 0>,
                <&macro_wait_time 15>, <&bt BT_DISC 1>,
                <&macro_wait_time 15>, <&bt BT_DISC 2>,
                <&macro_wait_time 15>, <&bt BT_DISC 3>,
@@ -21,7 +21,7 @@ ZMK_MACRO(BT0,
 
 ZMK_MACRO(BT1,
     display-name = "BTs1";
-    bindings = <&macro_wait_time 500>, <&bt BT_SEL 1>,
+    bindings = <&macro_wait_time 1000>, <&bt BT_SEL 1>,
                <&macro_wait_time 15>, <&bt BT_DISC 0>,
                <&macro_wait_time 15>, <&bt BT_DISC 2>,
                <&macro_wait_time 15>, <&bt BT_DISC 3>,
@@ -30,7 +30,7 @@ ZMK_MACRO(BT1,
 
 ZMK_MACRO(BT2,
     display-name = "BTs2";
-    bindings = <&macro_wait_time 500>, <&bt BT_SEL 2>,
+    bindings = <&macro_wait_time 1000>, <&bt BT_SEL 2>,
                <&macro_wait_time 15>, <&bt BT_DISC 0>,
                <&macro_wait_time 15>, <&bt BT_DISC 1>,
                <&macro_wait_time 15>, <&bt BT_DISC 3>,
@@ -39,7 +39,7 @@ ZMK_MACRO(BT2,
 
 ZMK_MACRO(BT3,
     display-name = "BTs3";
-    bindings = <&macro_wait_time 500>, <&bt BT_SEL 3>,
+    bindings = <&macro_wait_time 1000>, <&bt BT_SEL 3>,
                <&macro_wait_time 15>, <&bt BT_DISC 0>,
                <&macro_wait_time 15>, <&bt BT_DISC 1>,
                <&macro_wait_time 15>, <&bt BT_DISC 2>,
@@ -48,7 +48,7 @@ ZMK_MACRO(BT3,
 
 ZMK_MACRO(BT4,
     display-name = "BTs4";
-    bindings = <&macro_wait_time 500>, <&bt BT_SEL 4>,
+    bindings = <&macro_wait_time 1000>, <&bt BT_SEL 4>,
                <&macro_wait_time 15>, <&bt BT_DISC 0>,
                <&macro_wait_time 15>, <&bt BT_DISC 1>,
                <&macro_wait_time 15>, <&bt BT_DISC 2>,
